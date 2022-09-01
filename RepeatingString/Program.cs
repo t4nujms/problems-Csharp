@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace RepeatingString
+﻿namespace RepeatingString
 {
     internal class Program
     {
