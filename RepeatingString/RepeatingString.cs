@@ -1,24 +1,34 @@
-﻿using System.Text;
+﻿using System;
+using System.Linq;
+using System.Text;
 
 namespace RepeatingString
 {
     internal class RepeatingString
     {
-        static void Main(string[] args)
+        private string StringToRepeat { get; init; }
+        private int RepeatTimes { get; init; }
+
+        public RepeatingString(string str, int repeat)
         {
-            Console.Write("Enter a string to repeat: ");
-            string? str = Console.ReadLine();
+            StringToRepeat = str;
+            RepeatTimes = repeat;
+        }
 
-            Console.Write("Enter the number of times to repeat the string: ");
-            int n = Convert.ToInt32(Console.ReadLine());
-
+        public string Display1()
+        {
             StringBuilder display = new StringBuilder();
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < RepeatTimes; i++)
             {
-                display.Append(str);
+                display.Append(StringToRepeat);
             }
 
-            Console.WriteLine(display.ToString());
+            return display.ToString();
+        }
+
+        public string Display2()
+        {
+            return new StringBuilder(StringToRepeat.Length * RepeatTimes).Insert(0, StringToRepeat, RepeatTimes).ToString();
         }
     }
 }
