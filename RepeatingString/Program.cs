@@ -14,12 +14,16 @@
 
             RepeatingString repeatingString = new RepeatingString(str, n);
 
-            Console.WriteLine("Output using StringBuilder and for-loop: ");
+            Console.WriteLine("Output using string addition and for-loop: ");
             Console.WriteLine(repeatingString.Display1());
             Console.WriteLine();
 
-            Console.WriteLine("Output using StringBuilder only: ");
+            Console.WriteLine("Output using StringBuilder and for-loop: ");
             Console.WriteLine(repeatingString.Display2());
+            Console.WriteLine();
+
+            Console.WriteLine("Output using StringBuilder only: ");
+            Console.WriteLine(repeatingString.Display3());
             Console.WriteLine();
 
         }

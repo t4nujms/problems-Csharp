@@ -15,6 +15,17 @@ namespace RepeatingString
 
         public string Display1()
         {
+            string display = string.Empty;
+            for (int i = 0; i < RepeatTimes; i++)
+            {
+                display = display + StringToRepeat;
+            }
+
+            return display;
+        }
+
+        public string Display2()
+        {
             StringBuilder display = new StringBuilder();
             for (int i = 0; i < RepeatTimes; i++)
             {
@@ -24,7 +35,7 @@ namespace RepeatingString
             return display.ToString();
         }
 
-        public string Display2()
+        public string Display3()
         {
             return new StringBuilder(StringToRepeat.Length * RepeatTimes).Insert(0, StringToRepeat, RepeatTimes).ToString();
         }
