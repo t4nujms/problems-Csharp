@@ -2,7 +2,7 @@
 
 namespace RepeatingString
 {
-    internal class RepeatingString
+    public class RepeatingString
     {
         private string StringToRepeat { get; init; }
         private int RepeatTimes { get; init; }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatingString", "Repeatin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayPermutations", "ArrayPermutations\ArrayPermutations.csproj", "{3E086973-84CD-449A-BF96-463E50BD15B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatingStringDescendingTimes", "RepeatingStringDescendingTimes\RepeatingStringDescendingTimes.csproj", "{0182C644-00B5-461C-B34C-01404EC04EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatingStringDecreasingTimes", "RepeatingStringDescendingTimes\RepeatingStringDecreasingTimes.csproj", "{0182C644-00B5-461C-B34C-01404EC04EC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
